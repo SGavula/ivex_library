@@ -1,0 +1,51 @@
+.footer {
+    background-image: linear-gradient(80deg, #4369BD , #6093D3) !important;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    @media(max-width: 767px) {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        width: 50%;
+        padding: 40px 0 40px 80px;
+
+        @media(max-width: 991px) {
+            padding: 40px 0 40px 16px;
+        }
+
+        @media(max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    //Wave down
+    .wave-footer {
+        width: 50%;
+        @media(max-width: 767px) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            margin-top: -1px;
+        } 
+    }
+
+
+    .logo {
+        width: 140px;
+        height: auto;
+    }
+
+    .no-gutter {
+        --bs-gutter-x: 0 !important;
+    }
+
+    li {
+        padding-right: 40px;
+        width: auto;
+    }
+}

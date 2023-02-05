@@ -1,0 +1,22 @@
+.searchbar {
+    width: 85%;
+    height: 40px;
+    padding-left: 20px;
+    color: $odkaz;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(45, 64, 106, 0.1);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    &::placeholder {
+        color: $odkaz;
+    }
+    &:focus {
+        outline: none;
+    }
+}

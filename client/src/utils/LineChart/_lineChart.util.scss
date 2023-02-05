@@ -1,0 +1,23 @@
+.graph {
+    padding-bottom: 160px;
+
+    .graph-heading {
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+
+        @media(max-width: 800px) {
+            flex-direction: column;
+        }
+
+        h1 {
+            margin-right: 30px;
+            width: 45%;
+
+            @media(max-width: 800px) {
+                width: 100%;
+            }
+        }
+    }
+}

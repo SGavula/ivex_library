@@ -1,0 +1,208 @@
+.registration {
+    padding-top: 80px;
+
+    .reg-form {
+        position: relative;
+        padding: 160px 0;
+
+        @media(max-width: 992px) {
+            height: auto;
+            padding: 100px 0 80px 0;
+        }
+
+        .wave-down {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // Animations
+        .animate {
+            #object-II {
+                opacity: 0;
+                transform: scale(.5);
+                transition: all .4s ease-out;
+            }
+        }
+
+        .scroll-to-membership-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .scroll-to-membership {
+               cursor: pointer;
+    
+               img {
+                   width: 48px;
+                   height: auto;
+               }
+            }
+        }
+    }
+
+    .voucher-wrapper {
+        padding: 0;
+
+        .voucher-checkbox {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            cursor: pointer;
+
+            p {
+                margin: 0;
+            }
+    
+            .checkbox {
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                box-shadow: 0px 0px 20px rgba(45, 64, 106, 0.1);
+                border-radius: 4px;
+                border: 1px solid $text;
+                outline: none;
+                position: relative;
+        
+                .line {
+                    position: absolute;
+                    left: 1px;
+                    top: 7.9px;
+                    width: 16px;
+                    height: 2px;
+                    background-color: $yellow;
+                    border-radius: 20px;
+        
+                    &:first-child {
+                        transform: rotate(-45deg);
+                    }
+        
+                    &:last-child {
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        input {
+            margin: 0 0 20px 0;
+        }
+    }
+
+
+    .register-btn-wrapper {
+        display: flex;
+        flex-direction: column;
+        
+        .register-btn {
+            span {
+                display: inline-block;
+
+                button {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            margin-top: 20px;
+        }
+    }
+
+    .wave-reg {
+        display: flex;
+        justify-content: flex-start;
+        .wave-up { 
+            width: 50%; 
+            @media(max-width: 767px) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .space {
+        @media(max-width: 992px) {
+            width: 95%;
+            margin: auto;
+        }
+    }
+
+    input {
+        box-shadow: 0px 0px 20px rgba(45, 64, 106, 0.21);
+        border-radius: 10px;
+        color: $odkaz;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $odkaz;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $odkaz;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $odkaz;
+      }
+
+      .white {
+          padding: 100px 0;
+      }
+    .white {
+        padding: 140px 0;
+
+        @media screen and (max-width: 600px) {
+            padding: 40px 0;
+        }
+    }
+
+    .payment-form {
+        padding-top: 160px;
+
+        button {
+            font-family: 'Montserrat', sans-serif;
+            color: #2D406A;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 10px 32px;
+            transition: .5s ease-in-out;
+            border-color: transparent;
+            color: $text;
+            height: auto;
+            width: auto;
+            border-radius: 30px;
+            background-color: $yellow;
+            transition: all .3s ease-in;
+            margin-top: 10px;
+
+            &:hover {
+                border-radius: 8px;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        .error-message {
+            margin-top: 10px;
+            color: #EB5757 !important;
+            font-weight: 500;
+        }
+        
+        @media screen and (max-width: 600px) {
+            padding-top: 80px;
+        }
+    }
+}

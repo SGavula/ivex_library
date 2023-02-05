@@ -1,0 +1,17 @@
+.alert {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: auto;
+    z-index: 1001;
+    padding: 10px 20px !important;
+    width: 300px;
+
+    @media(max-width: 330px) {
+        width: 280px; 
+    }
+
+    @media(max-width: 280px) {
+        width: 240px; 
+    }
+}

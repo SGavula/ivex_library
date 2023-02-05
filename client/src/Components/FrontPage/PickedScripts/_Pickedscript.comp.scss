@@ -1,0 +1,116 @@
+.pickedScripts-frontpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 80px 0 0 0;
+    position: relative;
+    background-color: rgba($color: $odkaz, $alpha: 0.1);
+
+    @media screen and  (max-width: 992px) {
+        height: auto;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 60px 0 0 0;
+    }
+
+    @media screen and  (max-width: 450px) {
+        .space {
+            width: 90%;
+        }
+    }
+
+    .heading-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .more {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: $nadpis;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 400px) {
+            display: block;
+
+            .more {
+                text-align: end;
+            }
+        }
+    }
+
+
+    .scripts {
+        padding: 40px 0 80px 0;
+        /* the slides */
+        .slick-slide {
+            width: 224px !important;
+            @media (max-width: 1400px) {
+                margin: 0 auto;
+
+            }   
+        }
+        .slick-track {
+            display: flex;
+            justify-content: space-between;
+        }
+        @media(min-width: 1400px) {
+            .slick-track:before,
+            .slick-track:after {
+                display: none !important;
+            }
+        }
+
+        .slick-dots {
+            li {
+                button {
+                    width: 20px;
+                    height: 20px;
+                    border: none;
+                    border-radius: 15px;
+                    background-color: rgba(96, 147, 211, .1);
+                    &:before {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 8px;
+                        content: "";
+                        text-align: center;
+                        opacity: .5s;
+                        color: #000000;
+                        background-color: rgba(96, 147, 211, .1);
+                        transform: translate(-50%, -50%);
+                        transition: all .3s ease-out;
+                    }
+                }
+                &.slick-active,
+                &:hover {
+                    button {
+                        &:before {
+                            background-color: $odkaz;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            padding: 40px 0 80px 0;
+        }
+    }
+
+    .wave-up {
+        img {
+            width: 100%;
+            transform: rotate(180deg);
+        }
+    }
+}

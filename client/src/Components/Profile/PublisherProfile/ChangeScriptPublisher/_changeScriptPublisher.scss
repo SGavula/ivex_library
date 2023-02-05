@@ -1,0 +1,27 @@
+.change-script-publisher {
+    
+    h5 {
+        padding-bottom: 24px;
+    }
+
+    .custom-file-upload {
+        font-family: 'Montserrat', sans-serif;
+        color: #2D406A;
+        font-weight: 700;
+        font-size: 16px;
+        transition: .5s ease-in-out;
+        border-color: transparent;
+        padding: 10px 37px;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

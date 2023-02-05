@@ -1,0 +1,64 @@
+.admin-script-bottom {
+    padding: 160px 0;
+
+    .img {
+        img {
+            box-shadow: 0px 0px 20px rgba(45, 64, 106, 0.21);
+            width: 278px;
+            height: auto;
+            @media(max-width: 400px) {
+                width: 248px; 
+            }
+        }
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .custom-file-upload {
+        font-family: 'Montserrat', sans-serif;
+        color: #2D406A;
+        font-weight: 700;
+        font-size: 16px;
+        transition: .5s ease-in-out;
+        border-color: transparent;
+        padding: 10px 0;
+        width: 278px;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        @media(max-width: 400px) {
+            width: 248px; 
+        }
+    }
+
+    .form-check-wrapper {
+        padding-bottom: 40px;
+    }
+
+    .change-script-btns {
+        display: flex;
+
+        @media(max-width: 400px) {
+            flex-direction: column;
+        }
+
+        .change-script-btn {
+            padding-right: 40px;
+
+            @media(max-width: 400px) {
+                padding-bottom: 16px;
+            }
+        }
+    }
+
+}

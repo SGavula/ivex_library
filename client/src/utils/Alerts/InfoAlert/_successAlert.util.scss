@@ -1,0 +1,19 @@
+@import '../../../variables';
+
+.alert {
+    position: fixed;
+    top: 150px !important; 
+    right: 20px;
+    width: auto;
+    z-index: 100;
+    padding: 10px 20px !important;
+    width: 300px;
+
+    @media(max-width: 330px) {
+        width: 280px; 
+    }
+
+    @media(max-width: 280px) {
+        width: 240px; 
+    }
+}

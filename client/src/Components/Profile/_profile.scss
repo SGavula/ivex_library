@@ -1,0 +1,114 @@
+.profile {
+  .heading {
+    p {
+      padding-bottom: 0 !important;
+      margin-bottom: 5px !important;
+    }
+
+    .line {
+      @media (max-width: 767px) {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .padding-y {
+    padding: 130px 0 80px 0;
+  }
+
+  .padding-top {
+    padding-top: 130px;
+  }
+
+  .form-profile-edit {
+    .change-info-white {
+      background-color: $white;
+      height: 20vh;
+    }
+
+    .flex-sm-row {
+      @media (min-width: 400px) {
+        flex-direction: row !important;
+      }
+    }
+  }
+
+  .profile-password-change {
+    .profile-wrapper {
+      padding-bottom: 0px;
+      form {
+        div {
+          width: 75%;
+
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+      }
+
+      .change-right {
+        @media (max-width: 767px) {
+          padding-top: 30px;
+        }
+        img {
+          @media (max-width: 450px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .profile-white {
+      background-color: $white;
+      height: 20vh;
+    }
+  }
+
+  //Responsive Payment Cards
+  .user-profile-price-card {
+    .user-card {
+      padding: 40px 15px 0 0;
+    }
+
+    .cancel-membership {
+      padding: 40px 15px 0 0;
+      min-width: 293px;
+      max-width: 293px;
+      display: flex;
+      justify-content: center;
+
+      .cancel {
+        width: 234px !important;
+      }
+    }
+  }
+
+  //Responsive Payment Cards - labels
+  .labels {
+    max-width: 278px;
+
+    .label {
+      background-color: $yellow;
+      padding: 5px 5px 15px 5px;
+      box-shadow: 0px 0px 20px rgba(45, 64, 106, 0.21);
+      border-radius: 8px;
+      margin-bottom: -10px;
+      cursor: pointer;
+      transition: all 0.2s ease-in;
+      color: $text;
+      font-size: 16px;
+      width: 25%;
+      overflow: hidden;
+      text-align: center;
+
+      &:hover {
+        background-color: $white;
+      }
+    }
+
+    .active {
+      width: 50%;
+      background-color: $white;
+    }
+  }
+}

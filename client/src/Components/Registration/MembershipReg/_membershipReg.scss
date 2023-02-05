@@ -1,0 +1,91 @@
+.membership {
+    background-color: rgba($color: $odkaz, $alpha: 0.1);
+
+    @media(max-width: 992px) {
+        height: auto;
+    }
+
+    &-heading {
+        padding-bottom: 80px;
+
+        @media screen and (max-width: 600px) {
+            padding-bottom: 60px;
+        }
+    }
+
+    .frontpage-membership {
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .wrapper {
+        z-index: 2;
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+
+        .labels {
+            max-width: 400px;
+    
+            .label {
+                background-color: $yellow;
+                padding: 5px 5px 15px 5px;
+                box-shadow: 0px 0px 20px rgba(45, 64, 106, 0.21);
+                border-radius: 8px;
+                margin-bottom: -10px;
+                cursor: pointer;
+                transition: all .2s ease-in;
+                color: $text;
+                font-size: 16px;
+                width: 25%;
+                overflow: hidden;
+                text-align: center;
+    
+                &:hover {
+                  background-color: $white;  
+                }
+            }
+    
+            .active {
+                width: 75%;
+                background-color: $white;
+            }
+            
+            @media screen and (max-width: 450px) {
+                width: auto;
+                margin: 0 20px;
+            }
+        }
+    }
+
+    /* Registration */
+    .register-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 120px;
+
+        @media screen and (max-width: 1645px) {
+            gap: 40px;
+        }
+
+        @media screen and (max-width: 1445px) {
+            flex-wrap: wrap
+        }
+    }
+
+
+    .wave-up {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}

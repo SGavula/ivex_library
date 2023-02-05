@@ -1,0 +1,21 @@
+.page404 {
+    padding-top: 80px;
+
+    .page404-main {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media(max-width: 992px) {
+            height: auto;
+            padding: 40px 0;
+        }
+
+    }
+
+    .page404-white {
+        background-color: $white;
+        height: 20vh;
+    }
+}

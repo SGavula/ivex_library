@@ -1,0 +1,45 @@
+.frontpage-card {
+    border: 1px solid rgba(96, 147, 211, .2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 230px;
+    height: 279px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 36px 0 45px 0;
+
+    img {
+        width: 60px;
+        height: 46px;
+    }
+
+    .line {
+        width: 40px;
+        height: 2px;
+        background: #FFC50F;
+        margin: 36px auto 40px auto;
+    }
+
+    h5 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: $logo;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        color: #91A2C9;
+        margin: 0;
+    }
+}

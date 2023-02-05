@@ -1,0 +1,92 @@
+.gdpr-main {
+    position: relative;
+    padding: 160px 0;
+
+    @media(max-width: 720px) {
+        padding: 40px 0;
+    }
+
+
+    .wave-down {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h4 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 31px 0 20px 0;
+    }
+
+    .list {
+        display: flex;
+        gap: 13px;
+        padding-left: 40px;
+
+        .point {
+            max-width: 5px;
+            min-width: 5px;
+            max-height: 5px;
+            min-height: 5px;
+            border-radius: 50%;
+            background-color: $text;
+            margin-top: 14px;
+        }
+    }
+
+    .table {
+        width: 120%;
+        overflow: scroll;
+
+        @media screen and (max-width: 1600px) {
+            width: 130%; 
+        }
+
+        @media screen and (max-width: 1199px) {
+            width: 100%; 
+        }
+
+        @media screen and (max-width: 1050px) {
+            width: 110%; 
+        }
+
+        @media screen and (max-width: 991px) {
+            width: 100%; 
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 51px 0;
+        min-width: 767px;
+
+        td, th {
+            border: 1px solid #2D406A;
+        }
+
+        th {
+            padding: 45px 18px 45px 28px;
+        }
+
+        td {
+            padding: 54px 18px 74px 28px;
+        }
+
+        .table-bold {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: $text;
+        }
+    }
+}
+

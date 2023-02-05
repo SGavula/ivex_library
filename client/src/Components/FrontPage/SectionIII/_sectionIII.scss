@@ -1,0 +1,101 @@
+.section_III {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 80px 0;
+
+    @media(min-width: 1200px) {
+        padding: 80px 0 160px 0;
+    }
+
+    @media(max-width: 992px) {
+        height: auto;
+    }
+
+    h1 {
+        @media(min-width: 768px) {
+            width: 150%;
+        }
+    }
+
+    // Accordion
+    .accordion {
+        padding-top: 40px;
+        max-width: 600px;
+
+        .accordion-wrapper {
+            margin: 0 auto;
+            border-bottom: 1px solid rgba(145, 162, 201, .2);
+            padding: 40px 0 10px 0;
+
+            &:first-child {
+                padding-top: 0;
+            }
+    
+            .accordion-heading {
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+    
+                h5 {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #4369BD;
+                    margin: 0; 
+                }
+
+                .img-rotate {
+                    transform: rotate(180deg);
+                }
+              }
+    
+              .content {
+                margin: 0;
+                max-height: 0;
+                overflow: hidden;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 200%;
+                color: #91A2C9;
+              }
+    
+              .content.show {
+                margin: 10px 0 0 0;
+                height: auto;
+                max-height: 9999px;
+              }
+          }
+          
+          @media screen and (max-width: 767px) {
+            width: auto;
+            max-width: none;
+          }
+    }
+
+    // Animations
+    .animate {
+        #object-III {
+            opacity: 0;
+            transform: scale(.5);
+            transition: all .4s ease-out;
+        }
+    }
+
+    .wave-down {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.admin-publisher-profile {
+    padding-top: 80px; 
+
+   .admin-publisher-profile-wrapper {
+       padding: 80px 0;
+
+       .cancel-publisher {
+            padding-top: 40px;
+        }
+
+       .admin-publisher-profile-heading {
+           @media(max-width: 600px) {
+               width: 100%;
+           }
+       }
+
+       .change-page {
+           margin-top: 24px;
+       }
+
+       .publishers-infos {
+           padding-top: 24px;
+
+           .publisher-info {
+               padding-bottom: 8px;
+           }
+       }
+
+       .publisher-admin-profile-form {
+           padding-top: 80px;
+       }
+
+       .admin-publisher-profile-change-password {
+           padding-top: 80px;
+       }
+
+       .admin-publisher-profile-cards {
+           display: flex;
+
+           @media(max-width: 1345px) {
+               flex-direction: column;
+           }
+
+           .profile-card:first-child {
+                margin-bottom: 40px;
+                @media(min-width: 1345px) {
+                    margin-right: 40px;
+                    margin-bottom: 0;
+                }
+           }
+       }
+   }
+
+   .admin-publisher-profile-main {
+        padding-bottom: 160px;
+
+        .graph-clicker {
+            padding-top: 80px;
+            padding-bottom: 16px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .rewards {
+            h1 {
+                padding-bottom: 50px;
+            }
+        }
+
+        .scripts-select-box {
+            display: flex;
+            justify-content: flex-end;
+            @media(max-width: 800px) {
+                display: block;
+            }
+
+            .select-box-wrapper {
+                margin: 16px 0;
+                z-index: 10;
+
+                .select-box {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+
+}

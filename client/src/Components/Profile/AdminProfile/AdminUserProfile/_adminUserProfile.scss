@@ -1,0 +1,45 @@
+.admin-user-profile {
+   padding-top: 80px; 
+
+   .admin-user-profile-wrapper {
+       padding: 80px 0;
+
+       .cancel-user {
+            padding-top: 40px;
+        }
+
+       .admin-user-profile-heading {
+            @media(max-width: 600px) {
+                width: 100%;
+            }
+       }
+
+       .change-page {
+           margin-top: 24px;
+       }
+
+       .user-infos {
+           padding-top: 24px;
+
+           .user-info {
+               padding-bottom: 8px;
+           }
+       }
+
+       .user-admin-profile-form {
+           padding-top: 80px;
+       }
+
+       .admin-user-profile-change-password {
+           padding-top: 80px;
+       }
+   }
+
+   .admin-user-profile-main {
+       padding-bottom: 160px;
+
+       .profile-last-scripts {
+           padding-top: 80px;
+       }
+   }
+}

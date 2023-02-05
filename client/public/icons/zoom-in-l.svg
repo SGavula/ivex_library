@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5 Copy</title>
+    <g id="01-Consumer-Site---Templates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5-Copy">
+            <rect id="Rectangle-Copy-3" fill="#FFC50F" x="0" y="0" width="40" height="40" rx="8"></rect>
+            <rect id="Rectangle-Copy-5" fill="#2D406A" x="8" y="16" width="24" height="8" rx="2"></rect>
+            <rect id="Rectangle-Copy-5" fill="#2D406A" transform="translate(20.000000, 20.000000) rotate(90.000000) translate(-20.000000, -20.000000) " x="8" y="16" width="24" height="8" rx="2"></rect>
+        </g>
+    </g>
+</svg>

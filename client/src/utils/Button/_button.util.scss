@@ -1,0 +1,148 @@
+.button {
+    font-family: 'Montserrat', sans-serif;
+    color: $nadpis;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 32px;
+    transition: .5s ease-in-out;
+    border-color: transparent;
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    line-height: 20px;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    
+    // Colors
+    &.yellow {
+        background-color: $yellow;
+        transition: all .3s ease-in;
+
+        &:hover {
+            border-radius: 8px;
+        }
+    }
+
+    &.white {
+        background-color: $white;
+        transition: all .3s ease-in;
+
+        &:hover {
+            border-radius: 8px;
+        }
+    }
+
+    &.grey {
+        background-color: rgba(96, 147, 211, .1);
+        transition: all .3s ease-in;
+
+        &:hover {
+            border-radius: 8px;
+        }
+    }
+
+    // Styles
+
+    &.large {
+        padding-left: 0; 
+        padding-right: 0; 
+        width: 278px;
+    }
+
+    &.medium {
+        padding-left: 0; 
+        padding-right: 0; 
+        width: 229px;
+    }
+
+    &.tall {
+        padding-left: 0; 
+        padding-right: 0; 
+        height: 60px;
+        padding: 0px 12px;
+        white-space: pre-line;
+    }
+
+    &.small {
+        padding-left: 0; 
+        padding-right: 0; 
+        width: 102px;
+    }
+
+    &.script-btn {
+        padding-left: 0; 
+        padding-right: 0; 
+        width: 192px;
+    }
+
+    &.login {
+        padding-left: 0; 
+        padding-right: 0; 
+        width: 134px;
+    }
+
+    //Oval
+    &.oval-left {
+        border-radius: 0 !important;
+        border-top-left-radius: 20px !important;
+        border-bottom-left-radius: 20px !important;
+        margin-right: -27px !important;
+    }
+
+    &.cancel {
+        border: 2px solid #EB5757;
+        box-sizing: border-box;
+        border-radius: 121;
+        color: #EB5757;
+        background-color: transparent;
+        width: 229px;
+    
+        &:hover {
+            border-radius: 8px 8px 8px 8px;
+        }
+    }
+
+    &.agree {
+        border: 2px solid #27AE60;
+        box-sizing: border-box;
+        border-radius: 121;
+        color: #27AE60;
+        background-color: transparent;
+        width: 229px;
+    
+        &:hover {
+            border-radius: 8px 8px 8px 8px;
+        }
+    }
+
+}
+
+.searchbutton {
+    width: auto;
+    height: auto;
+    border-radius: 22px;
+    background-color: transparent;
+    border: none;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.circle-white {
+    height: 16px;
+    width: 16px;
+    background-color: $white;
+    box-shadow: 0px 0px 20px rgba(20, 20, 20, .1);
+    border-radius: 50px;
+
+    .circle-yellow {
+        height: 8px;
+        width: 8px;
+        background-color: $yellow;
+        border-radius: 50px;
+    }
+}

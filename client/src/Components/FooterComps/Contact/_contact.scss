@@ -1,0 +1,73 @@
+.contact {
+
+    .wave-up {
+        img {
+            width: 100%;
+            transform: rotate(180deg);
+        }
+    }
+
+    //Contact
+    .contact-form {
+        padding: 160px 0;
+    
+        @media(max-width: 720px) {
+            padding: 80px 0 40px 0;
+        }
+    
+        input {
+            width: 80%;
+
+            @media(max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        .submit-contact-button {
+            padding-top: 24px;
+        }
+    }
+
+    //Founders
+    .founders {
+        padding: 80px 0;
+
+        @media(max-width: 992px) {
+            .founder:last-child {
+                padding-top: 80px;
+            }
+        }
+
+        @media(max-width: 720px) {
+            padding: 40px 0;
+        }
+
+        img {
+            width: 400px;
+            height: auto;
+
+            @media(max-width: 768px) {
+                width: 320px;
+                height: auto;
+            }
+
+            @media(max-width: 340px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    //Firemné info
+    .info {
+        padding: 160px 0;
+        .info-container {
+            padding-top: 40px;
+    
+            h3 {
+                padding-bottom: 24px;
+            }
+        }
+    }
+}
+

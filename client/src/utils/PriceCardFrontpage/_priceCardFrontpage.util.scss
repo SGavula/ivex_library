@@ -1,0 +1,311 @@
+/* Price Card */
+.price-card-frontpage {
+    width: 347px;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(45, 64, 106, 0.1);
+    border: none;
+    border-radius: 8px;
+    min-height: 450px;
+    padding: 40px 0px 0px 0px;
+    position: relative;
+
+    .price-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        display: grid;
+        place-items: center;
+
+        .more {
+            cursor: pointer;
+            position: relative;
+            color: $odkaz;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+
+            @media screen and (max-width: 380px) {
+                margin-top: 10px;
+            }
+        }
+        
+        img {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: rotate(180deg);
+        }
+    }
+
+    .card-body {
+        padding: 0;
+
+        h5 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: $text;
+        }
+
+        .price-wrapper {
+            h6 {
+                padding-top: 40px;
+                margin: 0;
+                color: $logo;
+
+                .price-number {
+                    font-size: 80px;
+                    line-height: 97.52px;
+                }
+            }
+            p {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                margin: 0;
+                color: $text;
+            }
+        }
+    
+        /* Points */
+        .points-wrapper {
+            width: 218px;
+            height: auto;
+            margin: 40px auto 0px auto;
+            
+            .opacity {
+                opacity: .2;
+            }
+            
+            .point {
+                width: 100%;
+                display: flex;
+                align-items: center;
+    
+                .point-dash {
+                    background-color: $yellow;
+                    max-width: 16px;
+                    min-width: 16px;
+                    max-height: 4px;
+                    min-height: 4px;
+                }
+    
+                p {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 200%;
+                    color: $text;
+                    margin: 0 0 0 20px;
+                }
+            }
+        }
+        
+        .register-btn {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 56px;
+
+            button {
+                width: auto !important;
+                padding: 8px 30px !important;
+            }
+        }
+
+        /* Discount */
+        .discount {
+            width: 120px;
+            height: 120px;
+            background-color: $yellow;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -40px;
+            right: -40px;
+
+            p {
+                margin: 0;
+                color: #FFFFFF;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 100%;
+                margin: 0 20px;
+            }
+
+            .discount-number {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                span {
+                    font-size: 48px;
+                    line-height: 51.51px;
+                    font-weight: 700;
+                }
+            }
+
+            @media screen and (max-width: 991px) {
+                top: -10px;
+            }
+
+            @media screen and (max-width: 500px) {
+                top: -10px;
+                right: -20px;
+                width: 100px;
+                height: 100px;
+
+                p {
+                    font-size: 10px;
+                }
+    
+                .discount-number {
+                    font-size: 12px;
+                    span {
+                        font-size: 38px;
+                    }
+                }
+            }
+
+        }
+
+        .normal-price {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 59px;
+            color: $nadpis;
+            position: absolute;
+            top: 180px;
+            left: 85px;
+
+            span {
+                font-size: 16px;
+                line-height: 19.5px;
+            }
+
+            .cross {
+                width: 60px;
+                height: 4px;
+                background-color: #EB5757;
+                border-radius: 10px;
+                transform: rotate(-15deg);
+                position: absolute;
+                top: 30px;
+                left: -10px;
+            }
+
+            @media screen and (max-width: 500px) {
+                left: 40px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1400px) {
+        width: 300px;
+        padding: 30px 0px 0px 0px;
+        min-height: 400px;
+
+        .card-body {
+            .price-wrapper {
+                h6 {
+                    padding-top: 20px;
+                }
+    
+                p {
+                    padding-bottom: 40px;
+                }
+            }
+
+            /* Points */
+            .points-wrapper {
+                margin: 10px auto 0px auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        width: 347px;
+        padding: 40px 0px 0px 0px;
+        min-height: 450px;
+
+        .card-body {
+            .price-wrapper {
+                h6 {
+                    padding-top: 40px;
+                }
+    
+                p {
+                    padding-bottom: 60px;
+                }
+            }
+
+            /* Points */
+            .points-wrapper {
+                margin: 40px auto 0px auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 50px 20px 20px 20px;
+        padding: 30px 0px 0px 0px;
+        min-height: 400px;
+
+        .card-body {
+            .price-wrapper {
+                h6 {
+                    padding-top: 20px;
+                }
+    
+                p {
+                    padding-bottom: 40px;
+                }
+            }
+
+            /* Points */
+            .points-wrapper {
+                margin: 10px auto 21px auto;
+            }
+
+            button {
+                padding: 10px 30px !important;
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 340px) {
+        .card-body {
+            .register-btn {
+                button {
+                    padding: 8px 20px !important;
+                    font-size: 14px;
+                }       
+            }
+        }
+    }
+
+}

@@ -1,0 +1,55 @@
+.vop-main {
+    position: relative;
+    padding: 160px 0;
+
+    @media(max-width: 720px) {
+        padding: 40px 0;
+    }
+
+
+    .wave-down {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h3 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 39px;
+        padding-top: 20px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        @media screen and (max-width: 420px) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    ol {
+        padding-left: 19px;
+        li {
+            margin-bottom: 16px;
+            padding-left: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+            span {
+                word-break: break-all;
+            }
+        }
+    }
+
+}
+

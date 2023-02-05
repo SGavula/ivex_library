@@ -1,0 +1,99 @@
+.login-sec {
+    background-color: rgba($color: $odkaz, $alpha: 0.1);
+    padding-top: 80px;
+
+    .login-main {
+        height: 80vh;
+        position: relative;
+        z-index: 3;
+
+        @media(max-width: 992px) {
+            height: auto;
+            padding: 40px 0;
+        }
+
+        @media (orientation: portrait) {
+            .col-md-6 {
+                 width: 100%;
+            }
+
+            .img {
+                justify-content: center !important;
+            }
+        }
+
+        .login-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .form-group {
+                width: 75%;
+
+                @media(max-width: 1200px) {
+                    width: 90%;
+                }
+
+                @media(max-width: 768px) {
+                    width: 100%;
+                }
+
+                @media(orientation: portrait) {
+                    width: 100%;
+                }
+            }
+
+            .login-buttons {
+                width: 75%;
+
+                @media(max-width: 1200px) {
+                    width: 90%;
+                }
+
+                @media (max-width: 768px)  {
+                    width: 100%;
+                }
+
+                @media(orientation: portrait) {
+                    width: 100%;
+                }
+
+                @media(max-width: 400px) {
+                    flex-direction: column !important;
+
+                    .register-btn {
+                        padding-top: 16px;
+                    }
+                }
+            }
+
+        }
+
+        img {
+            width: 400px;
+            height: 400px;
+
+            @media(max-width: 450px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    }
+
+    .login-white {
+        background-color: $white;
+        height: 20vh;
+        position: relative;
+
+        .wave-down {
+            position: absolute;
+            top: 0;
+            right: 0;
+    
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

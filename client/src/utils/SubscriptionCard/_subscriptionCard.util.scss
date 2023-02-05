@@ -1,0 +1,25 @@
+.subscription-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(45, 64, 106, 0.1);
+    border-radius: 8px;
+    width: 278px;
+    height: 245px;
+    position: relative;
+    
+    .icon {
+        position: absolute;
+        top: 20px;
+        left: 15px;
+    }
+
+    .vlajocka {
+        position: absolute;
+        top: 20px;
+        right: -30px;
+    }
+
+    @media(max-width: 340px) {
+        width: 258px;
+        height: 235px;
+    }
+}

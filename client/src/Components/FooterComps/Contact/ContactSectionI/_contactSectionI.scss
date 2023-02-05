@@ -1,0 +1,35 @@
+.contact_section_I {
+    background-color: rgba($color: $odkaz, $alpha: 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media(min-width: 720px) {
+        padding: 160px 0;
+    }
+
+    @media(max-width: 992px) {
+        height: auto;
+        .space {
+            width: 95%;
+            margin: auto;
+            padding: 120px 0px;
+        }
+    }
+
+    @media(max-width: 450px) {
+        .space {
+            width: 90%;
+        }
+    }
+
+
+    .right-side {
+        img {
+            @media(max-width: 450px) {
+                width: 100%;
+            }
+         }
+    }
+}

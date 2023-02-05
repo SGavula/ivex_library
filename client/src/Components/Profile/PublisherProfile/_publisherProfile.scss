@@ -1,0 +1,52 @@
+.publisher-profile {
+    .upload-script-btn {
+        padding-top: 40px;
+    }
+
+    .change-publisher-info {
+        padding-top: 80px;
+    }
+
+    .change-publisher-info {
+        width: 75%;
+
+        @media(max-width: 768px) {
+            width: 100%;  
+        }
+    }
+
+    .graph-clicker {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 16px;
+    }
+
+    .rewards {
+        h1 {
+            padding-bottom: 50px;
+        }
+    }
+
+    .scripts-select-box {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        @media(max-width: 800px) {
+            display: block;
+        }
+
+        .select-box-wrapper {
+            margin: 16px 0;
+            z-index: 10;
+
+            .select-box {
+                margin: 0;
+            }
+        }
+    }
+    
+    a {
+        
+    }
+}
